@@ -1,8 +1,10 @@
-# graho/backup-gpg-s3
-
+# Overview
 A **Docker** container that mounts a volume, compresses it with **XZ Utils**, encrypts it with **GPG** and stores it on **AWS S3**. Very simple and secure. Just 40 lines of code.
 
 Why should you encrypt your private files before uploading them on S3? Because nobody respects privacy these days.
+
+# Changes from master
+added region as a temp fix
 
 
 # Quick Start
