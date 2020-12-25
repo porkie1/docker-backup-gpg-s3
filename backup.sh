@@ -1,7 +1,7 @@
 #!/bin/sh
 
-BACKUP_DATE=$(date +"%Y-%m-%d_%H-%M")
 BACKUP_NAME="${NAME_PREFIX}_`date +"%Y-%m-%d_%H-%M"`
+
 cd /backup
 tar cJf ~/$BACKUP_NAME.tar.xz ./*
 cd /
