@@ -12,6 +12,7 @@ RUN pip install b2
 
 ADD backup.sh /backup.sh
 ADD restore.sh /restore.sh
+ADD b2.sh /b2.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 
