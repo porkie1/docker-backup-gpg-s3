@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine
 MAINTAINER technik@myfoodmap.de
 
 RUN apk add --update \
@@ -8,6 +8,7 @@ RUN apk add --update \
     && rm -rf /var/cache/apk/*
 
 RUN pip install awscli
+RUN pip install b2
 
 ADD backup.sh /backup.sh
 ADD restore.sh /restore.sh
